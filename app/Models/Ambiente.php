@@ -12,4 +12,3 @@ class Ambiente extends Model
         'nome',
     ];
 }
-

@@ -7,7 +7,6 @@ use App\Exceptions\DatasIguaisException;
 use App\Models\Ambiente;
 use App\Models\Reserva;
 use App\Models\User;
-use Carbon\Carbon;
 use Carbon\CarbonInterface;
 
 class ReservaService
@@ -17,10 +16,10 @@ class ReservaService
 
     public function criar(CarbonInterface $dataInicio, CarbonInterface $dataFim)
     {
-        if ($dataInicio->gte($dataFim)){
+        if ($dataInicio->gte($dataFim)) {
             throw new DatasIguaisException();
         }
-        if ($dataInicio->isPast()){
+        if ($dataInicio->isPast()) {
             throw new DataInicioFuturaException();
         }
 
@@ -30,7 +29,6 @@ class ReservaService
         $reserva->data_inicio = $dataInicio;
         $reserva->data_fim = $dataFim;
         $reserva->save();
-    
     }
     public function setAmbiente(Ambiente $ambiente): self
     {
