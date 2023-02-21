@@ -14,3 +14,11 @@ php artisan key:generate
 ```
 php artisan serve
 ```
+5. criar migrations
+```
+php artisan make:migration --create=nome_da_tabela
+```
+6. Dar refresh 
+```
+php artisan migrate:refresh
+```
