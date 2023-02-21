@@ -13,6 +13,9 @@ php artisan make:model
 php artisan make:migration 
 php artisan make:migration -h
 php artisan make:migration --create=nome_da_tabela
+php artisan make:migration --table=nome_da_tabela
+php artisan make:exception
+php artisan make:factory
 ```
 
 ```
