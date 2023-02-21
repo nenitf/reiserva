@@ -1,0 +1,54 @@
+# logs
+*.log
+npm-debug.log*
+yarn-error.log
+
+# deps
+/vendor
+/node_modules
+.npm
+
+# laravel
+/public/hot
+/public/storage
+/storage/clockwork/*
+/storage/*.key
+/storage/framework/laravel-excel/*
+Homestead.json
+Homestead.yaml
+
+# vite
+/public/build
+
+# tests
+.phpunit.result.cache
+/tests/coverage
+
+# configs
+.env
+.env.testing
+.phpstorm.meta.php
+
+# misc
+.DS_Store
+.directory
+.idea
+.scannerwork
+.php_cs.cache
+.php-cs-fixer.cache
+supervisord.pid
+
+# IDE Helper
+_ide_helper*.php
+.vscode
+
+.vapor/
+.env.production
+.env.development
+.env.staging
+.env.next
+/vapor.yml
+auth.json
+secrets.php
+
+meumakefile
